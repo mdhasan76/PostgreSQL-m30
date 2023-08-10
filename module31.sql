@@ -121,6 +121,16 @@ CREATE TABLE Employees_data (
     from employees_data 
     INNER JOIN department on dept_id = department.deptId LIMIT 10;
 
+    -- ## Left join 
+    SELECT employee_id, name, dept_id, dept_name  
+    From employees_data 
+    LEFT JOIN department on dept_id = deptId LIMIT 7;
+
+    -- ## natural join 
+    SELECT * from employees_data
+    natural join department limit 20;
+
+
     SELECT * from department;
 
 
